@@ -1,0 +1,69 @@
+/*Elemento raiz do html*/
+:root{
+    /*Declaração de variáveis*/
+    --color-background: #F0F0F7; /*Cores escritas em hexadecimal*/
+    --color-primary-lighter: #b18ff0;
+    --color-primary-light: #7c5fc0;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DA6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #05e068;
+    --color-secondary-dark: #048F58;
+    --color-text-in-primary: #e0d3ff;
+    --color-text-title: #322640;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #280580;
+    --color-line-in-white: #E6E6f0;
+    --color-input-background: #F8F8Fc;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    /*Controle de medidas rem*/
+    font-size: 60%; 
+    /*Tamanho padrão da fonte: 16px / 100% / 1rem*/
+}
+
+/*Elemento qualquer*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    /*vh = viewport height*/
+}
+
+body {
+    background: var(--color-background);
+    /*Mudar o posicionamento padrão dos elementos da aplicação*/
+    display: flex; 
+    /*Alinhar a "altura" dos elementos da página*/
+    align-items: center;
+    /*Alinhamento do texto (á esquerda, centralizado, etc*/
+    justify-content: center;
+}
+
+body, input, button, textarea {
+    /*font-weith:100;*/
+    /*font-size: 1.6rem;*/
+    /*font-family: Poppins;*/
+    /*forma resumida*/
+    font: 500 1.6rem Poppins;    
+    color: var(--color-text-base);
+}
+
+#container{    
+    width: 90vw;
+    /*Tamanho máximo da caixa*/
+    max-width: 700px;
+}
+
+@media (min-width: 700px){
+    :root{
+        font-size: 60.5%;
+        /*Nota: Todo item será relativo a 10px*/
+    }
+}
